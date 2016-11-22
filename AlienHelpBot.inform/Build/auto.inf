@@ -4402,7 +4402,7 @@ Global lightflag = false;
 ! ListWriter.i6t: Memory
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant REQUISITION_STACK_SIZE = 3*16;
+Constant REQUISITION_STACK_SIZE = 3*17;
 Array requisition_stack --> REQUISITION_STACK_SIZE;
 Global requisition_stack_pointer = 0;
 
@@ -11043,7 +11043,7 @@ Object -> I126_telephone ""
     with vector 0
     has mark_as_thing
     with IK2_Count 1
-    with IK2_Link nothing
+    with IK2_Link I128_volcano_insurance
     with KD_Count 2
     with name 'telephone' 'things//p' 
     with action_bitmap 0 0 0 0 0 
@@ -11085,6 +11085,23 @@ Object I127_mud_volcano ""
     with list_together BC_161
     with plural BC_162
     with article BC_163
+;
+
+Object -> I128_volcano_insurance ""
+    class K2_thing
+    with short_name BC_164
+    with description BC_165
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 2
+    with IK2_Link nothing
+    with KD_Count 2
+    with name 'volcano' 'insurance' 'things//p' 
+    with action_bitmap 0 0 0 0 0 
+    with initial BC_166
+    with list_together BC_167
+    with plural BC_168
+    with article BC_169
 ;
 
 Constant I71_english_language = 1;
@@ -11138,12 +11155,12 @@ Constant I123_masculine_gender = 2;
 Constant I124_feminine_gender = 3;
 Array Global_Vars -->
   (false) ! 7 darkness witnessed
-  (BC_164) ! 25 command prompt
+  (BC_170) ! 25 command prompt
   (I71_english_language) ! 29 language of play
-  (BC_165) ! 32 story author
-  (BC_166) ! 33 story headline
-  (BC_167) ! 34 story genre
-  (BC_168) ! 35 story description
+  (BC_171) ! 32 story author
+  (BC_172) ! 33 story headline
+  (BC_173) ! 34 story genre
+  (BC_174) ! 35 story description
   (1) ! 36 release number
   (0) ! 37 story creation year
   (0) ! 45 locale paragraph count
@@ -11158,14 +11175,14 @@ Array Global_Vars -->
 
 
 Array T0_final_question_options table  tab_0_0 tab_0_1 tab_0_2 tab_0_3 tab_0_4;
-Array tab_0_0 table $0664 0 (BC_169) (BC_170) (BC_171) (BC_172) (BC_173) ;
+Array tab_0_0 table $0664 0 (BC_175) (BC_176) (BC_177) (BC_178) (BC_179) ;
 Array tab_0_1 table $0465 1 (0) (0) (1) (0) (0) ;
 Array tab_0_2 table $2066 2 (Consult_Grammar_93) (Consult_Grammar_94) (Consult_Grammar_95) (Consult_Grammar_96) (Consult_Grammar_97) ;
 Array tab_0_3 table $0067 3 (IMMEDIATELY_RESTART_VM_R) (IMMEDIATELY_RESTORE_SAVED_R) ( TABLE_NOVALUE) (IMMEDIATELY_QUIT_R) (IMMEDIATELY_UNDO_R) ;
 Array tab_0_4 table $0068 4 ( TABLE_NOVALUE) ( TABLE_NOVALUE) (V27_amusing_a_victorious_pla) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ;
 Array T1_locale_priorities table  tab_1_0 tab_1_1;
-Array tab_1_0 table $0869 NULL ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE;
-Array tab_1_1 table $446a 5 ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_0 table $0869 NULL ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_1 table $446a 5 ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
 Array TB_Blanks -> 
   ! For table T0_final_question_options
   $00  ! Column 0
@@ -11175,7 +11192,7 @@ Array TB_Blanks ->
   $1b  ! Column 4
   
   ! For table T1_locale_priorities
-  $07  ! Column 1
+  $0f  ! Column 1
   
   ! End of table
   NULL NULL;
@@ -27977,7 +27994,7 @@ Array FWMatrix --> NUM_ROOMS*NUM_ROOMS;
 ! Relations.i6t: Relation Route-Finding
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant MAX_ROUTE_LENGTH = 16 + 32;
+Constant MAX_ROUTE_LENGTH = 17 + 32;
 
 [ RelationRouteTo relation from to count  handler;
 	if (count) {
@@ -48777,20 +48794,21 @@ Verb 'notify'
 
 
 
-Constant TX_PS_40 = ">";
+Constant TX_PS_42 = ">";
 Constant TX_PS_2 = "AlienHelpBot";
 Constant TX_PS_3 = "An Interactive Fiction";
 Constant TX_PS_32 = "As good-looking as ever.";
 Constant TX_PS_36 = "Earth";
-Constant TX_PS_41 = "Fiction";
+Constant TX_PS_43 = "Fiction";
 Constant TX_PS_4 = "Gregori, Lars";
 Constant TX_PS_38 = "Mud Volcano";
-Constant TX_PS_45 = "QUIT";
-Constant TX_PS_42 = "RESTART";
-Constant TX_PS_43 = "RESTORE a saved game";
+Constant TX_PS_47 = "QUIT";
+Constant TX_PS_44 = "RESTART";
+Constant TX_PS_45 = "RESTORE a saved game";
+Constant TX_PS_41 = "The Volcano Insurance FST-42 protects you against predictable volcano explosions.";
 Constant TX_PS_35 = "The telephone is an old telephone with a dial plate. I think we don't support them on earth.";
 Constant TX_PS_39 = "There is a black mud volcano in the dessert. He usually only ooze mud, but we can support a volcane insurance.";
-Constant TX_PS_46 = "UNDO the last command";
+Constant TX_PS_48 = "UNDO the last command";
 Constant TX_PS_37 = "Your spacecraft crashed on earth and it seems you are lost.^^First of all: WELCOME ON EARTH.^^Feel free to look around.";
 Constant TX_PS_33 = "Yourself";
 Constant TX_PS_9 = "animals";
@@ -48810,7 +48828,7 @@ Constant TX_PS_30 = "outside";
 Constant TX_PS_6 = "people";
 Constant TX_PS_13 = "player's holdalls";
 Constant TX_PS_16 = "regions";
-Constant TX_PS_44 = "see some suggestions for AMUSING things to do";
+Constant TX_PS_46 = "see some suggestions for AMUSING things to do";
 Constant TX_PS_22 = "south";
 Constant TX_PS_23 = "southeast";
 Constant TX_PS_24 = "southwest";
@@ -48819,6 +48837,7 @@ Constant TX_PS_34 = "telephone";
 Constant TX_PS_19 = "the";
 Constant TX_PS_27 = "up";
 Constant TX_PS_12 = "vehicles";
+Constant TX_PS_40 = "volcano insurance";
 Constant TX_PS_26 = "west";
 Constant TX_PS_8 = "women";
 Constant TX_PS_31 = "yourself";
@@ -56140,15 +56159,21 @@ Array BC_161 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_162 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_163 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_164 --> PACKED_TEXT_STORAGE TX_PS_40;
-Array BC_165 --> PACKED_TEXT_STORAGE TX_PS_4;
-Array BC_166 --> PACKED_TEXT_STORAGE TX_PS_3;
-Array BC_167 --> PACKED_TEXT_STORAGE TX_PS_41;
+Array BC_165 --> PACKED_TEXT_STORAGE TX_PS_41;
+Array BC_166 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_167 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_168 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_169 --> PACKED_TEXT_STORAGE TX_PS_42;
-Array BC_170 --> PACKED_TEXT_STORAGE TX_PS_43;
-Array BC_171 --> PACKED_TEXT_STORAGE TX_PS_44;
-Array BC_172 --> PACKED_TEXT_STORAGE TX_PS_45;
-Array BC_173 --> PACKED_TEXT_STORAGE TX_PS_46;
+Array BC_169 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_170 --> PACKED_TEXT_STORAGE TX_PS_42;
+Array BC_171 --> PACKED_TEXT_STORAGE TX_PS_4;
+Array BC_172 --> PACKED_TEXT_STORAGE TX_PS_3;
+Array BC_173 --> PACKED_TEXT_STORAGE TX_PS_43;
+Array BC_174 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_175 --> PACKED_TEXT_STORAGE TX_PS_44;
+Array BC_176 --> PACKED_TEXT_STORAGE TX_PS_45;
+Array BC_177 --> PACKED_TEXT_STORAGE TX_PS_46;
+Array BC_178 --> PACKED_TEXT_STORAGE TX_PS_47;
+Array BC_179 --> PACKED_TEXT_STORAGE TX_PS_48;
 
 
 

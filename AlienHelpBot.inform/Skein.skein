@@ -137,7 +137,57 @@ There is a black mud volcano in the dessert. He usually only ooze mud, but we ca
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1090"></child>
+            <child nodeId="node-1104"></child>
         </children>
+    </item>
+    <item nodeId="node-1104">
+        <command xml:space="preserve">x telephone</command>
+        <result xml:space="preserve">The telephone is an old telephone with a dial plate. I think we don't support them on earth.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1105"></child>
+        </children>
+    </item>
+    <item nodeId="node-1105">
+        <command xml:space="preserve">south</command>
+        <result xml:space="preserve">
+Mud Volcano
+There is a black mud volcano in the dessert. He usually only ooze mud, but we can support a volcane insurance.
+
+You can see a volcano insurance here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1106"></child>
+        </children>
+    </item>
+    <item nodeId="node-1106">
+        <command xml:space="preserve">look volcano insurance</command>
+        <result xml:space="preserve">The Volcano Insurance FST-42 protects you against predictable volcano explosions.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1107"></child>
+        </children>
+    </item>
+    <item nodeId="node-1107">
+        <command xml:space="preserve">take volcano insurance</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1108"></child>
+        </children>
+    </item>
+    <item nodeId="node-1108">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  a volcano insurance
+  a telephone
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1090">
         <command xml:space="preserve">look telephone</command>

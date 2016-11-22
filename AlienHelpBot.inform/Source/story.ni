@@ -15,4 +15,6 @@ Rule for writing a paragraph about the telephone: say "Ok, I will try it."
 
 Mud Volcano is south of the Earth. "There is a black mud volcano in the dessert. He usually only ooze mud, but we can support a volcane insurance."
 
+A volcano insurance is here. The description of the volcano insurance is "The Volcano Insurance FST-42 protects you against predictable volcano explosions."
+  
 
