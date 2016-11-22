@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+
+<Skein rootNode="node-1085">
+    <generator>Inform Mac Client (Inform version 1.64/6.33/6M62)</generator>
+    <item nodeId="node-1085">
+        <command xml:space="preserve">AlienHelpBot</command>
+        <result xml:space="preserve">
+
+
+
+AlienHelpBot
+An Interactive Fiction by Gregori, Lars
+Release 1 / Serial number 161122 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Earth
+Your spacecraft crashed on earth and it seems you are lost.
+
+First of all: WELCOME ON EARTH.
+
+Feel free to look around.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1089"></child>
+            <child nodeId="node-1092"></child>
+            <child nodeId="node-1088"></child>
+        </children>
+    </item>
+    <item nodeId="node-1088">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Earth
+Your spacecraft crashed on earth and it seems you are lost.
+
+First of all: WELCOME ON EARTH.
+
+Feel free to look around.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1099"></child>
+        </children>
+    </item>
+    <item nodeId="node-1099">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Mud Volcano
+There is a black mud volcano in the dessert. He usually only ooze mud, but we can support a volcane insurance.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1100"></child>
+        </children>
+    </item>
+    <item nodeId="node-1100">
+        <command xml:space="preserve">inspect</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1101"></child>
+        </children>
+    </item>
+    <item nodeId="node-1101">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  a telephone
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1102"></child>
+        </children>
+    </item>
+    <item nodeId="node-1102">
+        <command xml:space="preserve">look telephone</command>
+        <result xml:space="preserve">The telephone is an old telephone with a dial plate. I think we don't support them on earth.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1092">
+        <command xml:space="preserve">l telephone</command>
+        <result xml:space="preserve">The telephone is an old telephone with a dial plate. I think we don't support them on earth.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1093"></child>
+        </children>
+    </item>
+    <item nodeId="node-1093">
+        <command xml:space="preserve">dial 911 with telephone</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1094"></child>
+        </children>
+    </item>
+    <item nodeId="node-1094">
+        <command xml:space="preserve">telephone eae</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1095"></child>
+        </children>
+    </item>
+    <item nodeId="node-1095">
+        <command xml:space="preserve">use telephone</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1096"></child>
+        </children>
+    </item>
+    <item nodeId="node-1096">
+        <command xml:space="preserve">talk telephone</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1097"></child>
+        </children>
+    </item>
+    <item nodeId="node-1097">
+        <command xml:space="preserve">x telephone</command>
+        <result xml:space="preserve">The telephone is an old telephone with a dial plate. I think we don't support them on earth.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1089">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  a telephone
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1090"></child>
+        </children>
+    </item>
+    <item nodeId="node-1090">
+        <command xml:space="preserve">look telephone</command>
+        <result xml:space="preserve">The telephone is an old telephone with a dial plate. We don't support them on earth.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1091"></child>
+        </children>
+    </item>
+    <item nodeId="node-1091">
+        <command xml:space="preserve">south</command>
+        <result xml:space="preserve">
+Mud Volcano
+There is a black mud volcano in the dessert. He usually only ooze mud, but we can support a volcane insurance.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+</Skein>

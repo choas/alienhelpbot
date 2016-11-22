@@ -1,42 +1,70 @@
 var SlackBot = require('slackbots');
  
+ const BOT_NAME = 'alienhelpbot'
 // create a bot 
 var bot = new SlackBot({
     token: process.env.SLACK_TOKEN,  // Add a bot https://my.slack.com/services/new/bot and put the token  
-    name: 'My Bot'
+    name: BOT_NAME
 });
- 
-bot.on('start', function() {
+
+function endless() {
     // more information about additional params https://api.slack.com/methods/chat.postMessage 
+
     var params = {
         icon_emoji: ':cat:'
     };
-    
-    // define channel, where bot exist. You can adjust it there https://my.slack.com/services  
+
     bot.postMessageToChannel('general', 'meow!', params, function(data) {
       console.log('DATA', data);
+      if (data.message.username !== BOT_NAME) {
+          endless();
+      }
     });
-/*    
-    // define existing username instead of 'user_name' 
-    bot.postMessageToUser('user_name', 'meow!', params); 
-    
-    // If you add a 'slackbot' property,  
-    // you will post to another user's slackbot channel instead of a direct message 
-    bot.postMessageToUser('user_name', 'meow!', { 'slackbot': true, icon_emoji: ':cat:' }); 
-    // define private group instead of 'private_group', where bot exist 
-    bot.postMessageToGroup('private_group', 'meow!', params);
-*/
+
+}
+
+bot.on('start', function() {
+
+ var Q = require('quixe');
+
+ Q('AlienHelpBot.materials/Release/AlienHelpBot.gblorb');
+
+
+
 });
 
-/**
- * @param {object} data 
-bot.on('message', function(data) {
-    // all ingoing events https://api.slack.com/rtm 
-    console.log(data);
 
-});
- */
+bot.on('message', (message) => {
 
+//                if (this.isChatMessage(message) &&
+//                    this.isChannelConversation(message) &&
+//                    !this.isFromMe(message) &&
+//                    this.isGameCommand(message)) {
 
+console.log('M', message);
+//                    };
 
+})
 
+/*
+    isGameCommand(message) {
+        return message.text[0] === '$';
+    }
+    getGameCommandText(message) {
+        return message.text.slice(1);
+    }
+
+    isChatMessage(message) {
+        return message.type === 'message' && Boolean(message.text);
+    }
+
+    isChannelConversation(message) {
+console.log('message', message);
+        return typeof message.channel === 'string' &&
+            message.channel[0] === 'C';
+    }
+
+    isFromMe(message) {
+        return message.bot_id === this.user.profile.bot_id;
+    }
+*/    
