@@ -3,7 +3,7 @@
     <story>
         <identification>
             <ifid>A0B2449A-F0AA-4728-A47B-500FFCA0ED4F</ifid>
-            <format>glulx</format>
+            <format>zcode</format>
         </identification>
         <bibliographic>
             <title>AlienHelpBot</title>
@@ -29,10 +29,10 @@
             <generatorversion>6M62</generatorversion>
             <originated>2016-11-22</originated>
         </colophon>
-        <glulx>
+        <zcode>
             <serial>161122</serial>
             <release>1</release>
             <compiler>Inform 7 build 6M62</compiler>
-        </glulx>
+        </zcode>
     </story>
 </ifindex>

@@ -10,8 +10,8 @@ release to "/Users/d064066/A/alienhelpbot/AlienHelpBot.materials/Release"
 
 ! Blorb instructions
 
-storyfile leafname "AlienHelpBot.gblorb"
-storyfile "/Users/d064066/A/alienhelpbot/AlienHelpBot.inform/Build/output.ulx" include
+storyfile leafname "AlienHelpBot.zblorb"
+storyfile "/Users/d064066/A/alienhelpbot/AlienHelpBot.inform/Build/output.z8" include
 ifiction "/Users/d064066/A/alienhelpbot/AlienHelpBot.inform/Metadata.iFiction" include
 cover "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
 picture 1 "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"

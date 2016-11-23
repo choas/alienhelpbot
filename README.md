@@ -9,6 +9,8 @@ export SLACK_TOKEN=xoxb-012345678-ABC1DFG2HIJ3
 
 The story file AlienHelpBot.inform is written with Inform (http://inform7.com/).
 
+The story text can be found here: AlienHelpBot.inform/Source/story.ni
+
 
 ## Start Bot
 
