@@ -14,7 +14,7 @@
   "author": "Lars Gregori",
   "license": "MIT",
   "dependencies": {
-    "quixe": "^0.2.0",
+    "quixe": "^0.3.0",
     "slackbots": "^0.5.3"
   }
 }
